@@ -11,7 +11,8 @@
     <div class= "container">
         <div class= "row">
             <div class = "col-md-7">
-                <form>
+                <form method = "POST">
+                    {% csrf_token %}
                     <div class="form-group">
                       <label for="">Name</label>
                       <input type="text" class="form-control" id="name" name = "name">
@@ -46,7 +47,7 @@
                       </div>
             
                       <div class="form-group">
-                        <label for="">Previous Work</label>
+                        <label for="">Previous Role</label>
                         <textarea type="text" class="form-control" id="previous_work" name = "previous_work"></textarea>
                       </div>
             
